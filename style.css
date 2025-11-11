@@ -5,6 +5,10 @@
 }
 
 body {
+   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   font-size: 17px;
   display: flex;
   flex-direction: column;
@@ -12,10 +16,14 @@ body {
   line-height: 1.4rem;
 }
 
-.container {
+img {
+  border-radius: 10px;
+}
+
+.first-container {
   display: flex;
-  flex: 1;
-  justify-content: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 header {
@@ -38,6 +46,10 @@ nav a {
   color: #353C3E;
 }
 
+nav a:hover {
+  color: #686436;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -46,11 +58,6 @@ nav ul {
 
 nav li {
   font-size: 1.1rem;
-}
-
-header .container {
-  justify-content: space-between;
-  padding-bottom: 100px;
 }
 
 .header-left {
@@ -72,7 +79,7 @@ header .container {
   margin-bottom: 20px;
 }
 
-.header-left button {
+button {
   width: 150px;
   padding: 10px 15px;
   border-radius: 10px;
@@ -82,12 +89,93 @@ header .container {
   color: #FFD91E;
 }
 
-.header-left button:hover {
+button:hover {
   background-color: #eee;
   color: #353C3E;
 }
-.container img {
+
+.first-container img {
   width: 592px;
   height: 432px;
+}
+
+section {
+  padding: 0 200px;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 200px;
+  background-color: #353C3E;
+  color: #FFD91E;
+}
+
+section img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.second-container h1 {
+  margin-bottom: 50px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  gap: 50px; 
+  text-align: center;
+}
+
+.third-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #353C3E;
+  color: #FFD91E;
+  padding: 80px 500px;
+  font-style: italic;
+  gap: 5px;
+  font-size: 23px;
+  line-height: 1.8rem;
+}
+
+.garry {
+  text-align: right;
+  padding-right: 30px;
+  font-style: normal;
+}
+
+.fourth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353C3E;
+  padding: 50px 0 100px;
+}
+
+.campaign-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFD91E;
+  color: #353C3E;
+  padding: 25px 70px;
   border-radius: 10px;
+  gap: 70px;
+}
+
+.mini-campaign {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFD91E;
+  color: #353C3E;
+  padding: 10px 300px;
 }
